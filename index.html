@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Header(Cabeçalho)-->
+    <header>
+        <h1 class="header_title">To do list</h1>&emsp;&emsp;
+        <h1 class="header_title">Beeia</h1>
+    </header>
+    <main>
+      <!-- Form(Adicionar Tarefa)-->
+      <form id="addForm">
+        <label for="titulo" class="formAdd">Título</label>
+        <input type="text" name="inputTitle" class="inputAdd" id="inputTitle" autocomplete="off" required>
+    
+        <label for="Descrição" class="formAdd">Descrição</label>
+        <input type="text" name="inputDesc" class="inputAdd" id="inputDesc" autocomplete="off" required>
+    
+        <button type="submit" class="addbtn" id="addBtn">Add</button>
+    </form>
+    
+        
+        <!-- Lista de Tarefas -->
+        <div class="list" id="list">
+        </div>
+
+        <!-- Modal Tela (Oculto)-->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <h2>Editar Atividade</h2>
+            <!-- Form para Editar -->
+            <form id="editForm">
+                <input type="hidden" id="inputIdEdit">
+                <label for="titulo" class="editInput">Título</label>
+                <input type="text" id="inputTitleEdit" class="inputAdd">
+                <label for="titulo" class="editInput">Descrição</label>
+                <input type="text" id="inputDescEdit" class="inputAdd">
+                <button type="submit" class="addbtn" id="editTarefa">Editar</button>
+            </form>
+            <!-- Botão para deletar -->
+            <button class="deleteBtn">Delete</button>
+          </div>
+        </div>
+    </main>
+
+    <!-- Link js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
